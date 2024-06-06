@@ -6,3 +6,31 @@
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
 }
+
+body {
+    background-color: #ceefff;
+}
+
+.botao-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000b5e;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.botao-default:hover {
+    background-color: #4954a3;
+}
+
+.botao-default a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+}

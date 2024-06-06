@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0a0d27;
+    background-color: #0d102e;
 }
 
 .container {
@@ -74,6 +74,7 @@ body {
     background-color: #000b5e;
     padding: 0.4rem 1rem;
     cursor: pointer;
+    transition: background-color .3s ease;
 }
 
 .botao-login button:hover {
@@ -156,6 +157,7 @@ body {
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color .3s ease;
 }
 
 .botao-continue button:hover {

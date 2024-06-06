@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/cadastro.css">
+    <title>BlueWave - Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imagem">
+            <img src="/assets/img/cadastro.svg" alt="imagem-cadastro">
+        </div>
+        <div class="formulario">
+            <form action="#">
+                <div class="form-header">
+                    <div class="titulo">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="botao-login">
+                        <button> <a href="#">Entrar</a> </button>
+                    </div>
+                </div>
+                <div class="cadastro-inputs">
+                    <div class="input">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Primeiro Nome" required>
+                    </div>
+                    <div class="input">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="text" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="input">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                    <div class="input">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Senha" required>
+                    </div>
+                    <div class="input">
+                        <label for="password">Confirme sua senha</label>
+                        <input id="password" type="password" name="confirm-password" placeholder="Senha" required>
+                    </div>
+                </div>
+                <div class="genero-formulario">
+                    <div class="genero-titulo">
+                        <h6>Gênero</h6>
+                    </div>
+                    <div class="genero-inputs">
+                        <div class="input-genero">
+                            <input type="radio" id="feminino" name="genero">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div class="input-genero">
+                            <input type="radio" id="masculino" name="genero">
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="input-genero">
+                            <input type="radio" id="outros" name="genero">
+                            <label for="outros">Outros</label>
+                        </div>
+                        <div class="input-genero">
+                            <input type="radio" id="none" name="genero">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="botao-continue">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

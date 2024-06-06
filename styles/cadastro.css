@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0d27;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.imagem {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+.imagem img {
+    width: 35rem;
+}
+
+.formulario {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #000b5e;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.botao-login {
+    display: flex;
+    align-items: center;
+}
+
+.botao-login button {
+    border: none;
+    border-radius: 5px;
+    background-color: #000b5e;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+}
+
+.botao-login button:hover {
+    background-color: #4954a3;
+}
+
+.botao-login button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.cadastro-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input input:hover {
+    background-color: #eeeeee75;
+}
+
+.input input:focus-visible {
+    outline: 1px solid #000b5e;
+}
+
+.input input::placeholder {
+    color: #000000be;
+}
+
+.input label,
+.genero-titulo h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.genero-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.input-genero {
+    display: flex;
+    align-items: center;
+}
+
+.input-genero input {
+    margin-right: 0.35rem;
+}
+
+.input-genero label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.botao-continue button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #000b5e;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-continue button:hover {
+    background-color: #4954a3;
+}
+
+.botao-continue button a {
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: white;
+}

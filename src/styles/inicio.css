@@ -64,7 +64,7 @@
 #banner {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: right;
     width: 70%;
     z-index: 2;
 }
@@ -84,4 +84,23 @@
     top: 0;
     right: 0;
     z-index: 1;
+}
+
+@media screen and (max-width: 1100px) {
+    #inicio {
+        height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #inicio .shape {
+        display: none;
+    }
+
+    #problema {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
 }

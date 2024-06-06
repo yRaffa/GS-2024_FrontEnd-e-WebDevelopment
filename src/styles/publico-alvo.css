@@ -1,0 +1,85 @@
+#publico {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#imagem-publico {
+    width:45%;
+    height: fit-content;
+}
+
+#publico .titulo-secao {
+    font-size: 3rem;
+}
+
+#publico .subtitulo-secao {
+    font-size: 2rem;
+}
+
+#publico-alvo {
+    width: 45%;
+}
+
+#clientes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.cliente {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-cliente {
+    height: 200px;
+    width: 200px;
+}
+
+.conteudo-cliente {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.nome-cliente {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1170px) {
+    #publico {
+        flex-direction: column;
+    }
+
+    #imagem-publico {
+        display: none;
+    }
+
+    #publico .titulo-secao {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #publico .subtitulo-secao {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #publico-alvo {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

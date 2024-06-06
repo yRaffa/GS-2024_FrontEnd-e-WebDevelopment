@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/src/styles/style.css">
     <link rel="stylesheet" href="/src/styles/navbar.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="/src/styles/inicio.css">
     <title>BlueWave</title>
 </head>
 
 <body>
     <header>
-
         <nav id="navbar">
             <i class="fa-brands fa-shopware" id="nav-logo"> BlueWave</i>
             <ul id="nav-list">
@@ -62,22 +62,26 @@
             </ul>
             <button class="botao-default"><a href="/pages/cadastro.html">Cadastro</a></button>
         </div>
-
     </header>
 
     <main id="conteudo">
-
         <section id="inicio">
-
             <div id="problema">
-                <h1 class="titulo">Cuidar dos <span>oceanos</span> através de tecnologias e práticas ambientais.</h1>
+                <h1 class="titulo">
+                    Cuidar dos <span id="azul">oceanos</span> através de <span class="sublinhado">tecnologias</span> e
+                    <span class="sublinhado">práticas ambientais</span>
+                </h1>
                 <p class="descricao">Conscientizar as populações empresas que utilizam dos mares sobre a saúde dos
                     oceanos, através da implementação e divulgação de tecnologias, sistemas de transportes marítimos com
                     energias e combustíveis sustentáveis e práticas ecológicas.</p>
+
                 <div id="problema-botoes">
                     <a href="#" class="botao-default">Saiba mais</a>
-                    <a href="tel:+5511987654321"><button class="botao-default"><i class="fa-solid fa-phone"></i>(+55) 11 98765-4321</button></a>
+                    <a href="tel:+5511987654321" id="botao-phone">
+                        <button class="botao-default"><i class="fa-solid fa-phone"></i></button> (+55) 11 98765-4321
+                    </a>
                 </div>
+
                 <div class="redes-sociais-botoes">
                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -86,11 +90,11 @@
             </div>
 
             <div id="banner">
-
+                <img src="/src/assets/images/mundo.svg" alt="imagem-ilhas">
             </div>
 
+            <div class="shape"></div>
         </section>
-
     </main>
 
     <script src="/src/javascript/script.js"></script>

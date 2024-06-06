@@ -34,3 +34,31 @@ body {
     font-weight: 600;
     color: #fff;
 }
+
+section {
+    padding: 28px 8%;
+}
+
+.redes-sociais-botoes {
+    display: flex;
+    gap: 18px;
+}
+
+.redes-sociais-botoes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000b5e;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.redes-sociais-botoes a:hover {
+    box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.1);
+}

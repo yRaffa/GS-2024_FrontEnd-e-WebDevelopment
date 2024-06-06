@@ -1,0 +1,61 @@
+#inicio {
+    display: flex;
+    min-height: calc(100vh - 90px);
+}
+
+#problema {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#problema .titulo {
+    font-size: 3.4rem;
+    color: #1d1d1d;
+}
+
+#problema .titulo #azul {
+    color: #4954a3;
+}
+
+#problema .titulo .sublinhado {
+    border-bottom: 5px solid #1d1d1d;
+}
+
+#problema .descricao {
+    font-size: 1.2rem;
+}
+
+#problema-botoes {
+    display: flex;
+    gap: 24px;
+}
+
+#problema-botoes .botao-default {
+    text-decoration: none;
+    color: #fff;
+}
+
+#botao-phone {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-decoration: none;
+    background-color: #fff;
+    color: #4954a3;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: box-shadow .3s ease;
+}
+
+#botao-phone:hover {
+    box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+#botao-phone i {
+    color: #fff;
+}

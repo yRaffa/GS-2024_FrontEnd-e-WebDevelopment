@@ -1,0 +1,76 @@
+#tecnologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#tecs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.tec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.tec img {
+    height: 200px;
+    width: fit-content;
+    margin-top: 25px;
+}
+
+.titulo-tec{
+    margin-top: 25px;
+}
+
+.descricao-tec {
+    color: #1d1d1d;
+    text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+    #tecs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tec {
+        width: calc(50% - 18px);
+    }
+
+    #tecnologia .titulo-secao,
+    #tecnologia .subtitulo-secao {
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    #tecs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tec {
+        width: 100%;
+    }
+
+    #tecnologia .titulo-secao,
+    #tecnologia .subtitulo-secao {
+        text-align: center;
+    }
+}

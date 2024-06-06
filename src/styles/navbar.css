@@ -37,14 +37,13 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1170px) {
     #nav-list,
     #navbar .botao-default {
         display: none;
     }
 
     #mobile-botao {
-        /* display: block; */
         display: flex;
         border: none;
         background-color: transparent;

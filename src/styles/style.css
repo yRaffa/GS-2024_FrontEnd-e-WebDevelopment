@@ -62,3 +62,14 @@ section {
 .redes-sociais-botoes a:hover {
     box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.1);
 }
+
+.titulo-secao {
+    color: #4954a3;
+    font-size: 2.2rem;
+    margin-top: 100px;
+}
+
+.subtitulo-secao {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}

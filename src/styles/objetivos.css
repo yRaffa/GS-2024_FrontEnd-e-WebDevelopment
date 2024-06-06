@@ -1,4 +1,4 @@
-#tecnologia {
+#objetivo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +6,7 @@
     min-height: 100vh;
 }
 
-#tecs {
+#objs {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@
     margin-top: 32px;
 }
 
-.tec {
+.obj {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,51 +27,51 @@
     overflow: hidden;
 }
 
-.tec img {
+.obj img {
     height: 200px;
     width: fit-content;
     margin-top: 25px;
 }
 
-.titulo-tec{
+.titulo-obj {
     margin-top: 25px;
     text-align: center;
 }
 
-.descricao-tec {
+.descricao-obj {
     color: #1d1d1d;
     text-align: center;
 }
 
 @media screen and (max-width: 1170px) {
-    #tecs {
+    #objs {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .tec {
+    .obj {
         width: calc(50% - 18px);
     }
 
-    #tecnologia .titulo-secao,
-    #tecnologia .subtitulo-secao {
+    #objetivo .titulo-secao,
+    #objetivo .subtitulo-secao {
         text-align: center;
     }
     
 }
 
 @media screen and (max-width: 600px) {
-    #tecs {
+    #objs {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .tec {
+    .obj {
         width: 100%;
     }
 
-    #tecnologia .titulo-secao,
-    #tecnologia .subtitulo-secao {
+    #objetivo .titulo-secao,
+    #objetivo .subtitulo-secao {
         text-align: center;
     }
 }

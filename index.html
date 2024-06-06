@@ -9,11 +9,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/src/styles/style.css">
     <link rel="stylesheet" href="/src/styles/navbar.css">
-    <title>BlueWave - Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>BlueWave</title>
 </head>
 
 <body>
     <header>
+
         <nav id="navbar">
             <i class="fa-brands fa-shopware" id="nav-logo"> BlueWave</i>
             <ul id="nav-list">
@@ -34,8 +38,54 @@
                 </li>
             </ul>
             <button class="botao-default"><a href="/pages/cadastro.html">Cadastro</a></button>
+
+            <button id="mobile-botao"><i class="fa-solid fa-bars"></i></button>
         </nav>
+
+        <div id="mobile-navbar">
+            <ul id="mobile-nav-list">
+                <li class="nav-item active">
+                    <a href="#inicio">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tecnologia">Tecnologias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#objetivo">Objetivos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#publico">Público Alvo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#beneficio">Benefícios</a>
+                </li>
+            </ul>
+            <button class="botao-default"><a href="/pages/cadastro.html">Cadastro</a></button>
+        </div>
+
     </header>
+
+    <main id="conteudo">
+
+        <section id="inicio">
+
+            <div id="problema">
+                <h1 class="titulo">Cuidar dos <span>oceanos</span> através de tecnologias e práticas ambientais.</h1>
+                <p class="descricao">Conscientizar as populações empresas que utilizam dos mares sobre a saúde dos
+                    oceanos, através da implementação e divulgação de tecnologias, sistemas de transportes marítimos com
+                    energias e combustíveis sustentáveis e práticas ecológicas.</p>
+                
+            </div>
+
+            <div id="banner">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="/src/javascript/script.js"></script>
 </body>
 
 </html>

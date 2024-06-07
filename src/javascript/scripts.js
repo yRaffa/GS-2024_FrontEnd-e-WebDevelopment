@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     ScrollReveal().reveal('.ben', {
-        origin: 'left',
+        origin: 'bottom',
         duration: 2000,
         distance: '20%'
     });

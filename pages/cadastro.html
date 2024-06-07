@@ -14,7 +14,7 @@
             <img src="/src/assets/images/cadastro.svg" alt="imagem-cadastro">
         </div>
         <div class="formulario">
-            <form action="#">
+            <form id="form" action="#">
                 <div class="form-header">
                     <div class="titulo">
                         <h1>Cadastre-se</h1>
@@ -26,27 +26,32 @@
                 <div class="cadastro-inputs">
                     <div class="input">
                         <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Primeiro Nome" required>
+                        <input id="firstname" type="text" name="firstname" placeholder="Primeiro Nome" class="required" oninput="firstnameValidate()">
+                        <span class="span-required">Nome deve ter no mínimo 3 caracteres.</span>
                     </div>
                     <div class="input">
                         <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" required>
+                        <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" class="required" oninput="lastnameValidate()">
+                        <span class="span-required">Sobrenome deve ter no mínimo 3 caracteres.</span>
                     </div>
                     <div class="input">
                         <label for="email">E-mail</label>
-                        <input id="email" type="text" name="email" placeholder="E-mail" required>
+                        <input id="email" type="text" name="email" placeholder="E-mail" class="required" oninput="emailValidate()">
+                        <span class="span-required">Digite um email válido.</span>
                     </div>
                     <div class="input">
-                        <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                        <label for="number">Celular (opicional)</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx">
                     </div>
                     <div class="input">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Senha" required>
+                        <input id="password" type="password" name="password" placeholder="Senha" class="required" oninput="passwordValidate()">
+                        <span class="span-required">Senha deve ter no mínimo 8 caracteres.</span>
                     </div>
                     <div class="input">
                         <label for="password">Confirme sua senha</label>
-                        <input id="password" type="password" name="confirm-password" placeholder="Senha" required>
+                        <input id="confirm-password" type="password" name="confirm-password" placeholder="Senha" class="required" oninput="confirmPassword()">
+                        <span class="span-required">As senhas devem ser iguais.</span>
                     </div>
                 </div>
                 <div class="genero-formulario">
@@ -73,11 +78,13 @@
                     </div>
                 </div>
                 <div class="botao-continue">
-                    <button><a href="#">Continuar</a></button>
+                    <button type="submit"><a href="#">Enviar</a></button>
                 </div>
             </form>
         </div>
     </div>
+
+    <script src="/src/javascript/cadastro.js"></script>
 </body>
 
 </html>

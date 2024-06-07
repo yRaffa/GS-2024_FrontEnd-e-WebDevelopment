@@ -144,7 +144,7 @@ body {
 }
 
 .input-genero label {
-    font-size: 0.81rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #000000c0;
 }
@@ -169,6 +169,13 @@ body {
     font-size: 0.92rem;
     font-weight: 500;
     color: white;
+}
+
+.span-required {
+    display: none;
+    font-size: 11px;
+    margin: 0 0 0 2px;
+    color: #e63636;
 }
 
 @media screen and (max-width: 1330px) {
